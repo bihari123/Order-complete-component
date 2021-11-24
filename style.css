@@ -1,0 +1,156 @@
+@import url('https://fonts.google.com/specimen/Red+Hat+Display:wght:500;700;900;&display=swap');
+
+:root{
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+}
+
+*{
+  margin:0px;
+  padding:0px;
+  font-size: 16px;
+  font-family: "Red Hat Display",sans-serif;
+  }
+    
+body{
+  background:url('./images/pattern-background-desktop.svg');
+  background-color:var(--pale-blue),var(--desaturated-blue);
+  display:flex;
+  flex-direction:column;
+  
+  justify-content:center;
+  align-items:center;
+  
+  }
+  
+.card-container{
+  width:300px;
+  height:450px;
+  border-radius:18px;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  }
+    
+.upper-container{
+  border-top-left-radius: 18px;
+  border-top-right-radius:18px ; 
+  height: 150px;
+  width: 100%;
+}
+  
+.img-hero{
+  border-radius:inherit;
+  height: 100%;
+  width: 100%;
+  } 
+
+
+.lower-container{
+  height:300px ;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  
+  border-bottom-right-radius: 18px;
+  border-bottom-left-radius: 18px;
+  background:white;
+}
+.lower-container-element{
+  padding: 20px 20px;
+  
+ 
+ 
+}
+.title-text{
+  font-weight: 900;
+  color: var(--dark-blue);
+  /*padding-top: 20px;*/
+}
+.description{
+  font-weight: 500;
+  font-size: 0.6em;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  /*padding:20px 50px;*/
+  line-height: 1.5em;
+  
+  color: var(--desaturated-blue);
+}
+.plans{
+  display: inline-flex;
+  justify-content: space-between ;
+  align-items: center;
+  width: 80%;
+  background: var(--very-pale-blue);
+}
+.select-plan{
+  display: inline-flex;
+  justify-content: space-between ;
+  align-items: center;
+  line-height: 1.2em;
+  
+
+}
+/*.plan-text{
+  padding: 10px;
+}*/
+.music-icon{
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+
+.annual-plan{
+  font-weight: 700;
+  font-size: 0.6rem;
+  color: var(--dark-blue);
+  
+}
+
+.price{
+  font-weight: 500;
+  font-size: 0.6rem;
+  color: var(--desaturated-blue);
+}
+
+.change-plan{
+  color:var(--bright-blue);
+  font-size: 0.6rem;
+  font-weight: 500;
+}
+.payment{
+  margin-top:35px;
+  width: 90%;
+  height: 2.5em;
+  font-size: 0.8rem;
+  font-weight: 700;
+  border-width: 0;
+  border-radius: 6px;
+  background: var(--bright-blue);
+  color: whitesmoke;
+}
+.cancel-order{
+  margin-top:1.5em;
+  color: var(--desaturated-blue);
+  font-weight: 700;
+  background: transparent;
+  border-width: 0px;
+  font-size :0.8rem;
+}
+
+.attribution { 
+  font-size: 11px; 
+  text-align: center;
+  position: relative;
+  margin: 10px;
+  }
+  
+.attribution a { color: hsl(228, 45%, 44%); }
